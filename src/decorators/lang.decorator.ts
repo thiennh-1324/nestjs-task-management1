@@ -1,4 +1,4 @@
-import { DEFAULT_LANGUAGE } from '@/constant/app-constant';
+import { DEFAULT_LANGUAGE } from 'src/constant/app-constant';
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
 
 export const Lang = createParamDecorator(

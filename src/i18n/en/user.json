@@ -1,13 +1,12 @@
 {
-  "hello": "Hello",
   "success": {
-    "create": "Create task was successful.",
-    "update": "Update task was successful.",
-    "delete": "Delete task was successful.",
+    "create": "Create user was successful.",
+    "update": "Update user was successful.",
+    "delete": "Delete user was successful.",
     "fetch": "Fetch data was successful."
   },
   "error": {
-    "notFound": "Task not found.",
+    "notFound": "User not found.",
     "validation": "Validation error occurred.",
     "server": "An internal server error occurred.",
     "unauthorized": "Unauthorized access."
