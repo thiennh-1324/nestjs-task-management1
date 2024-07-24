@@ -1,6 +1,6 @@
-import { Lang } from '@/decorators/lang.decorator';
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
+import { Lang } from 'src/decorators/lang.decorator';
 
 @Controller()
 export class AppController {

@@ -1,13 +1,12 @@
 {
-  "hello": "Xin chào",
   "success": {
-    "create": "Tạo mới nhiệm vụ thành công.",
-    "update": "Cập nhật nhiệm vụ thành công.",
-    "delete": "Xóa nhiệm vụ thành công.",
+    "create": "Tạo mới người dùng thành công.",
+    "update": "Cập nhật người dùng thành công.",
+    "delete": "Xóa người dùng thành công.",
     "fetch": "Lấy dữ liệu thành công."
   },
   "error": {
-    "notFound": "Nhiệm vụ không được tìm thấy.",
+    "notFound": "Người dùng không được tìm thấy.",
     "validation": "Đã xảy ra lỗi xác thực.",
     "server": "Đã xảy ra lỗi máy chủ nội bộ.",
     "unauthorized": "Truy cập không được phép."
