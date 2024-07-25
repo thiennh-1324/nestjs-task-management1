@@ -3,12 +3,18 @@
     "create": "Tạo mới người dùng thành công.",
     "update": "Cập nhật người dùng thành công.",
     "delete": "Xóa người dùng thành công.",
-    "fetch": "Lấy dữ liệu thành công."
+    "fetch": "Lấy dữ liệu thành công.",
+    "login": "Đăng nhập thành công"
   },
   "error": {
+    "existed": "Người dùng đã tồn tại",
+    "pwNotMatch": "Mật khẩu không chính xác",
     "notFound": "Người dùng không được tìm thấy.",
     "validation": "Đã xảy ra lỗi xác thực.",
     "server": "Đã xảy ra lỗi máy chủ nội bộ.",
     "unauthorized": "Truy cập không được phép."
+  },
+  "validation": {
+    "password": "Mật khẩu phải có độ dài từ 8-32 ký tự, bao gồm ít nhất một chữ hoa, một chữ thường, một số và một ký tự đặc biệt."
   }
 }

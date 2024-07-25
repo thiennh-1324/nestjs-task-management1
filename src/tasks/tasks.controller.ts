@@ -8,6 +8,7 @@ import {
   Put,
   Res,
   Query,
+  UseGuards,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
@@ -16,8 +17,10 @@ import { Response } from 'express';
 import { PaginationDto } from 'src/common/dto/pagination.dto';
 import { Lang } from 'src/decorators/lang.decorator';
 import { ValidationPipe } from 'src/validation/validation.pipe';
+import { AuthGuard } from '@nestjs/passport';
 
 @Controller('tasks')
+@UseGuards(AuthGuard('jwt'))
 export class TasksController {
   constructor(private readonly tasksService: TasksService) {}
 
