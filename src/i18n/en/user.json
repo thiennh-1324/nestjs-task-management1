@@ -3,12 +3,18 @@
     "create": "Create user was successful.",
     "update": "Update user was successful.",
     "delete": "Delete user was successful.",
-    "fetch": "Fetch data was successful."
+    "fetch": "Fetch data was successful.",
+    "login": "Login was successful."
   },
   "error": {
+    "existed": "User already exists",
+    "pwNotMatch": "Password not matched",
     "notFound": "User not found.",
     "validation": "Validation error occurred.",
     "server": "An internal server error occurred.",
     "unauthorized": "Unauthorized access."
+  },
+  "validation": {
+    "password": "Password must be 8-32 characters long, include at least one uppercase letter, one lowercase letter, one number, and one special character."
   }
 }

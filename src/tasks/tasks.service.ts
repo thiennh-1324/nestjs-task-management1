@@ -29,12 +29,12 @@ export class TasksService {
 
   async create(lang: string, res: Response, createTaskDto: CreateTaskDto) {
     const userId = createTaskDto.userId;
-    const user = (await findUserById(
+    const user = await findUserById(
       userId,
       UserQueryType.BASIC,
       res,
       await this.i18n.translate('user.error.notFound', { lang }),
-    )) as User;
+    );
 
     const newTask = this.taskRepository.create({ ...createTaskDto, user });
     await handleDatabaseOperation(
@@ -83,20 +83,20 @@ export class TasksService {
     id: number,
     updateTaskDto: UpdateTaskDto,
   ) {
-    const task = (await findTaskById(
+    const task = await findTaskById(
       id,
       TaskQueryType.BASIC,
       res,
       await this.i18n.translate('task.error.notFound', { lang }),
-    )) as Task;
+    );
 
     const userId = updateTaskDto.userId;
-    const user = (await findUserById(
+    const user = await findUserById(
       userId,
       UserQueryType.BASIC,
       res,
       await this.i18n.translate('user.error.notFound', { lang }),
-    )) as User;
+    );
     this.taskRepository.merge(task, {
       ...updateTaskDto,
       user,
